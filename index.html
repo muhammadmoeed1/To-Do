@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productivity Pro | Modern To-Do List</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="background-overlay"></div>
+    
+    <div class="container">
+        <header class="app-header">
+            <h1><i class="fas fa-tasks"></i> Productivity Pro</h1>
+            <div class="datetime">
+                <div id="time"></div>
+                <div id="date"></div>
+            </div>
+        </header>
+
+        <main class="app-main">
+            <div class="input-section">
+                <div class="input-container">
+                    <input type="text" id="taskInput" placeholder="Add a new task..." autocomplete="off">
+                    <button id="addTaskBtn"><i class="fas fa-plus"></i> Add Task</button>
+                </div>
+                <div class="search-container">
+                    <input type="text" id="searchInput" placeholder="Search tasks..." autocomplete="off">
+                    <i class="fas fa-search search-icon"></i>
+                </div>
+            </div>
+
+            <div class="controls-section">
+                <button id="clearAllBtn" class="clear-btn"><i class="fas fa-trash-alt"></i> Clear All</button>
+                <div class="task-count" id="taskCount">0 tasks</div>
+            </div>
+
+            <div class="tasks-section">
+                <ul id="taskList"></ul>
+            </div>
+        </main>
+    </div>
+
+    <div class="toast" id="toast"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
